@@ -20,4 +20,4 @@ youtube_json_results = call_youtube_API.youtube_search(search_terms,num_results)
 for yoga_video in youtube_json_results:
 	yoga_video_title = yoga_video["title"]
 	yoga_video_id = yoga_video["id"]
-	print "%s (www.youtube.com/%s)" % (yoga_video_title, yoga_video_id)
+	print "%s (www.youtube.com/watch?v=%s)" % (yoga_video_title, yoga_video_id)
