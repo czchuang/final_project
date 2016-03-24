@@ -4,7 +4,7 @@ from apiclient.errors import HttpError
 from oauth2client.tools import argparser
 
 
-DEVELOPER_KEY = "replace"
+DEVELOPER_KEY = ""
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
@@ -32,5 +32,3 @@ def youtube_search(query, max_results=1):
 
   #returns the results
   return map(results_transform, filter(result_filter, search_response.get("items", [])))
-
-print youtube_search("vinyasa moderate yoga")
